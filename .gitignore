@@ -1,3 +1,4 @@
+# --- Python / Venv / Cache ---
 .venv/
 venv/
 __pycache__/
@@ -5,7 +6,16 @@ __pycache__/
 *.pyo
 *.pyd
 *.log
-trace_*.zip
 
+# --- IDE ---
+.vscode/
+.idea/
+
+# --- Playwright (traces/screenshots, se gerar) ---
+trace_*.zip
+playwright-report/
+test-results/
+
+# --- Dados (versão apenas da planilha final) ---
 data/*
 !data/ibge_estados.xlsx

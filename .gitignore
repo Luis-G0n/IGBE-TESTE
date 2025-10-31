@@ -1,4 +1,3 @@
-@"
 .venv/
 venv/
 __pycache__/
@@ -7,4 +6,6 @@ __pycache__/
 *.pyd
 *.log
 trace_*.zip
-"@ | Out-File -Encoding UTF8 .gitignore
+
+data/*
+!data/ibge_estados.xlsx

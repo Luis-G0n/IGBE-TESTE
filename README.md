@@ -1,6 +1,7 @@
+# IBGE Panorama Scraper (sem API)
 
-Coleta indicadores do panorama estadual no site https://cidades.ibge.gov.br/
-(usando Playwright) e salva em `data/ibge_estados.xlsx`.
+Scraper em Python + Playwright que coleta os **cards do Panorama Estadual** no site do IBGE  
+e salva em `data/ibge_estados.xlsx`. **Sem uso de API.**
 
 ## Como rodar
 ```bash
@@ -11,3 +12,9 @@ python -m venv .venv
 pip install -r requirements.txt
 playwright install
 python scraper.py
+
+Observações
+
+No panorama estadual, não existem cards de Saúde e Meio Ambiente → o script preenche "N/D".
+
+O script ignora números que são apenas ano (ex.: 2019/2022) para evitar capturas erradas.
